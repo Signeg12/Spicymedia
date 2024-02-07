@@ -1,0 +1,17 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.visually-hidden { /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}/*# sourceMappingURL=style.css.map */
