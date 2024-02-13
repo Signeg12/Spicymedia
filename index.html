@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <header class="header">
+            <nav class="">
                <div class="nav__data">
                   <a href="index.html" class="nav__logo">
                      <img src="img/Logowebsite.png" alt="Virksomhedens logo">
@@ -104,46 +105,50 @@
                     <a href="#">Læs mere om os...</a>
                 </div>
             </section>
-            <section class="contact_section">
+            <section class="contact_us">
                 <div class="contact_text">
                     <h2>Kontakt os</h2>
                     <p>Få et uforpligtende møde med os, og hør nærmere hvad vi kan gøre for dig</p>
                 </div>
-                <div class="contact_formular">
-                    <form>
-                        <label class="visually-hidden" for="navn">Navn</label>
-                        <input id="navn" type="text" placeholder="Navn">
+                <div class="contact_section">
+                    <div class="contact_formular">
+                        <form>
+                            <label class="visually-hidden" for="navn">Navn</label>
+                            <input id="navn" type="text" placeholder="Navn">
 
-                        <label class="visually-hidden"  for="virksomhed">Virksomheds navn</label>
-                        <input id="virksomhed" type="text" placeholder="Virksomheds navn">
+                            <label class="visually-hidden"  for="virksomhed">Virksomheds navn</label>
+                            <input id="virksomhed" type="text" placeholder="Virksomheds navn">
 
-                        <label class="visually-hidden"  for="cvr">CVR. nummer</label>
-                        <input id="cvr" type="text" placeholder="CVR. Nummer">
-                
-                        <label class="visually-hidden"  for="mail">Mail</label>
-                        <input id="mail" type="email" placeholder="Mail">
-                
-                        <label class="visually-hidden"  for="telefonnummer">telefonnummer</label>
-                        <input id="telefonnummer" type="tel" placeholder="Telefonnummer">
-                        <label for="dropdown">Regioner</label>
-                            <select id="dropdown" name="select">
-                                <option value="0" selected="true" disabled >Vælg region</option>
-                                <option value="1">Region nordjylland</option>
-                                <option value="2">Region sjælland </option>
-                                <option value="3">Region Hovedstaden</option>
-                                <option value="4">Region syddanmark</option>
-                                <option value="5">Region midtjylland</option>
-                            </select>
-                    </form>            
-                </div>
-                <div class="contact_text">
-                    <form>
-                        <label for="besked">Besked</label>
-                        <textarea id="besked" cols="30" rows="10">Skriv her...</textarea>
-                        <input type="submit" value="Send" name="Send">
-                    </form>
+                            <label class="visually-hidden"  for="cvr">CVR. nummer</label>
+                            <input id="cvr" type="text" placeholder="CVR. Nummer">
+                    
+                            <label class="visually-hidden"  for="mail">Mail</label>
+                            <input id="mail" type="email" placeholder="Mail">
+                    
+                            <label class="visually-hidden"  for="telefonnummer">telefonnummer</label>
+                            <input id="telefonnummer" type="tel" placeholder="Telefonnummer">
+                            <label for="dropdown">Regioner</label>
+                                <select id="dropdown" name="select">
+                                    <option value="0" selected="true" disabled >Vælg region</option>
+                                    <option value="1">Region nordjylland</option>
+                                    <option value="2">Region sjælland </option>
+                                    <option value="3">Region Hovedstaden</option>
+                                    <option value="4">Region syddanmark</option>
+                                    <option value="5">Region midtjylland</option>
+                                </select>
+                        </form>            
+                    </div>
+                    <div class="contact_textfield">
+                        <form>
+                            <label class="visually-hidden" for="besked">Besked</label>
+                            <textarea id="besked" cols="30" rows="10">Skriv her...</textarea>
+                        </form>
+                    </div>
+                </div>    
+                <form>
+                    <input type="submit" value="Send" name="Send">
 
-                </div>
+                </form>
             </section>
             <section>
                 <div class="scroller_service" id="box">
