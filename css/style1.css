@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+
 }
 
 
@@ -42,15 +43,20 @@ body{
   }
   
   .nav__logo img{
-    width: 100px;
-    left: 100px;
+    width: 150px;
+    left: 130px;
   }
   
+.nav__menu {
+  font-size: 60px;
+}
+
   nav {
     height: 3.5rem;
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   
   .nav__burger {
@@ -62,8 +68,6 @@ body{
   
   .nav__data {
     height: 100%;
-    display: flex;
-    justify-content: space-between;
   }
   
   
@@ -71,6 +75,7 @@ body{
   
   .nav__toggle {
     position: relative;
+    float: right;
     width: 32px;
     height: 32px;
   }
@@ -265,6 +270,10 @@ body{
     .nav__link{
         background-color: white;
     }
+    .nav__data{
+      display: flex;
+      justify-content: space-between;
+    }
     
   }
 
@@ -274,6 +283,79 @@ body{
   max-width: 100%;
 }
 
+.hero_section span{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+
+
+
+.services_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px 20px;
+  margin-bottom: 100px;
+  
+  width: 100%;
+}
+.service_text{
+  background-color: #EB003F;
+  color: #fff;
+  line-height: 80px;
+  width: 500px;
+ padding: 20px;
+  margin-left: 50px;
+  border-radius: 30px;
+}
+
+.service_text a{
+  font-size: 35px;
+  font-family: vogue;
+  color: #fff;
+
+}
+
+.service_text h2{
+  font-size: 70px;
+  padding: 20px 0;
+  font-family: vogue;
+
+}
+
+.services_line{
+  display: grid;
+  flex-direction: row;
+}
+
+.service_image img{
+  max-width: 100%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  height: 40vh;
+  
+}
+
+.service_image{
+  padding: 20px;
+}
+
+
+/*About section*/
+.about_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50pxc 0;
+}
+
+.about_images img{
+  
+}
+/*<img class="line_white" src="img/linjehvid.png" alt="">*/
   /*Kontaktformular*/
 
   .contact_us{
@@ -316,6 +398,7 @@ input[type=text],input[type=email],input[type=tel],select,textarea{
 
 textarea{
   height: 100%;
+  padding-bottom: 135px;
 }
 
 ::placeholder{
@@ -352,14 +435,13 @@ input[type=submit]{
 /*service scroll section*/
 .scroller_service{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 20px;
   white-space: nowrap;
   align-items: center;
   padding-top: 30px ;
   padding-bottom: 30px ;
-  background-color: #e9b6c7;
-  overflow: scroll;
+  background-color: #F7B9C6;
   padding: 20px 20px;
 }
 
@@ -367,6 +449,16 @@ input[type=submit]{
   font-size: 30px;
 }
 
+@media screen and (max-width: 1118px){
+  .scroller_service{
+    display: flex;
+    justify-content: start;
+    overflow: scroll;
+
+
+  }
+  
+}
 
 
 /*footer*/
@@ -379,7 +471,8 @@ input[type=submit]{
 
 .footer_logo{
   width: 100px;
-  height: 70px;
+  height: 60px;
+  margin-bottom: 20px;
 }
 
 .footer_data{
@@ -389,18 +482,27 @@ input[type=submit]{
   
 }
 
-.footer_data a{
+.footer_data a, h5, li{
   color: #000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.fa-brands{
-  padding-right: 20px;
+
+.footer_data li{
+  padding-left: 30px;
 }
+
+.footer_info h5{
+  margin: 10px 0;
+}
+
+
 
 .social_info i{
   font-size: 40px;
   color: #EB003F;
   float: right;
+  padding: 10px;
 }
 
 .footer2 ul{
@@ -413,6 +515,7 @@ input[type=submit]{
 
 .footer2 a{
   color: #000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer2{
