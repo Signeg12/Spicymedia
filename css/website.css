@@ -10,6 +10,21 @@
 
 }
 
+a{
+    text-decoration: none;
+    
+}
+ul, li{
+    list-style: none;
+}
+
+
+nav a,h2{
+    font-family: Vogue;
+    font-size: 20px;
+}
+
+
 /*Navigation*/
 
 
