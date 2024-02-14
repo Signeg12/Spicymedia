@@ -33,6 +33,7 @@ nav a,h2{
     left: 0;
     width: 100%;
     user-select: none;
+    height: 100px;
   }
   
   .nav__logo img{
@@ -271,8 +272,20 @@ nav a,h2{
   }
 
 
+.website_text1{
+  display: flex;
 
+}
 
+.website_section{
+  margin: 0 100px;
+
+}
+
+.website_section img{
+  filter: grayscale(100%);
+  border-radius: 30px;
+}
 
   /*footer*/
   .footer1{
@@ -334,3 +347,4 @@ nav a,h2{
     background-color: #EB003F;
   
   }
+
