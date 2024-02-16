@@ -11,25 +11,23 @@
 }
 
 a{
-    text-decoration: none;
-    
+  text-decoration: none;
+  
 }
 ul, li{
-    list-style: none;
+  list-style: none;
 }
 
-nav a,h2{
-    font-family: Vogue;
-    font-size: 20px;
+
+nav a,h2, h1{
+  font-family: Vogue;
+  font-size: 20px;
 }
 
-body{
-    background: url(../img/websitegrafik.svg)no-repeat;
-    background-size: cover;
-    max-width: 100%;
 
+p{
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 /*Navigation*/
 
 
@@ -38,6 +36,7 @@ body{
     left: 0;
     width: 100%;
     user-select: none;
+    height: 100px;
   }
   
   .nav__logo img{
@@ -139,20 +138,17 @@ body{
     align-items: center;
     column-gap: .5rem;
     transition: background-color .3s;
-    border-radius: 20px;
   }
   
   
   .dropdown__link i {
     font-size: 1.25rem;
     font-weight: initial;
-
   }
   
   .dropdown__link:hover {
     background-color: #EB003F;
     border-radius: 20px;
-    transition: 0.4s ease-in-out;
   }
 
   
@@ -279,256 +275,166 @@ body{
   }
 
 
-  /*Hero section*/
-.front_image img{
-  max-width: 100%;
+.hero_aboutimage{
+  filter: grayscale(100%);
+  position: relative;
 }
 
-.hero_section span{
+.hero_about span{
   position: absolute;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: end;
-}
-
-
-
-
-.services_info{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 30px 20px;
-  margin-bottom: 100px;
-  
-  width: 100%;
-}
-.service_text{
-  background-color: #EB003F;
-  color: #fff;
-  line-height: 80px;
-  width: 500px;
- padding: 20px;
-  margin-left: 50px;
-  border-radius: 30px;
-}
-
-.service_text a{
-  font-size: 35px;
   font-family: vogue;
-  color: #fff;
-
 }
 
-.service_text h2{
-  font-size: 70px;
-  padding: 20px 0;
-  font-family: vogue;
+  /*Main om os*/
 
-}
-
-.services_line{
-  display: grid;
-  flex-direction: row;
-}
-
-.service_image img{
-  max-width: 100%;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  height: 40vh;
-  
-}
-
-.service_image{
-  padding: 20px;
-}
-
-
-/*About section*/
-.about_section{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 50pxc 0;
-}
-
-
-  
-
-/*<img class="line_white" src="img/linjehvid.png" alt="">*/
-  /*Kontaktformular*/
-
-  .contact_us{
-    margin: 30px 20px;
+  .hero_about h1{
+    font-size: 50px;
+  }
+  .medarbejdere img{
+    max-width: 100%;
+    border: 1px solid #000;
+    border-radius: 30px;
   }
 
-  .contact_text{
-    line-height: 30px;
-    color:#000;
+  .medarbejdere h2{
+    font-size: 30px;
+  }
+  .medarbejdere h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+   
+  }
+.container_about{
+  margin: 0 110px;
+}
+  .medarbejdere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .contact_text h2{
-    font-family: vogue;
-  }
+.medarbejdere h2,h3,p{
+  line-height: 30px;
+}
 
-  .contact_text p{
-    font-family: helvetica;
-  }
-
-.contact_section {
-    padding: 1.3em;
-    margin: 0 auto; /*Centrerer elementet på siden*/
+  .olivia{
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .marie{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
   }
 
-  .contact_formular{
-    display: flex;
-    flex-direction: row;
-  }
-
-input[type=text],input[type=email],input[type=tel],select,textarea{
-    width: 100%;
-    padding: 1em;
-    border: 1px solid #EB003F;
-    border-radius: 7px;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-}
-
-textarea{
-  height: 100%;
-  padding-bottom: 135px;
-}
-
-::placeholder{
-    color: #000;
-}
-
-
-
-input[type=submit]{
-    background-color: #EB003F;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 7px;
-    width: 100%;
-    font-size: 20px;
-    margin-top: 1em;
-    cursor: pointer;
-
-}
-
-.visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
-
-
-/*service scroll section*/
-.scroller_service{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  white-space: nowrap;
-  align-items: center;
-  padding-top: 30px ;
-  padding-bottom: 30px ;
-  background-color: #F7B9C6;
-  padding: 20px 20px;
-}
-
-.scroller_service span{
-  font-size: 30px;
-}
-
-@media screen and (max-width: 1118px){
-  .scroller_service{
-    display: flex;
-    justify-content: start;
-    overflow: scroll;
-
+  .dina{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
 
   }
-  
+  .signe{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+  }
+.signe_image{
+  width: 600px;
+}
+.olivia_image{
+  width: 600px;
+}
+.marie_image{
+  width: 600px;
+
+}
+.dina_image{
+  width: 600px;
 }
 
 
-/*footer*/
-
-.footer1{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/*hero sektion*/
+.hero_about{
   margin: 20px;
 }
 
-.footer_logo{
-  width: 100px;
-  height: 60px;
-  margin-bottom: 20px;
-}
 
-.footer_data{
-  display: flex;
-  padding: 10px;
-  white-space: nowrap;
+  /*footer*/
+  .footer1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+  }
   
-}
-
-.footer_data a, h5, li{
-  color: #000;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.footer_data li{
-  padding-left: 30px;
-}
-
-.footer_info h5{
-  margin: 10px 0;
-}
-
-
-
-.social_info i{
-  font-size: 40px;
-  color: #EB003F;
-  float: right;
-  padding: 10px;
-}
-
-.footer2 ul{
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  gap: 20px;
-  color: #000;
-  white-space: nowrap;
-}
-
-.footer2 a{
-  color: #000;
-  font-family: Arial, Helvetica, sans-serif;
-  white-space: nowrap;
-}
-
-.footer2{
-  background-color: #EB003F;
-
-}
-
-.contact_us{
-  background-image: url(../img/work-kontaktformular.png);
-}
-
-
+  .footer_logo{
+    width: 100px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .footer_data{
+    display: flex;
+    padding: 10px;
+    white-space: nowrap;
+    
+  }
+  
+  .footer_data a, h5, li{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .footer_data li{
+    padding-left: 30px;
+  }
+  
+  .footer_info h5{
+    margin: 10px 0;
+  }
+  
+  
+  
+  .social_info i{
+    font-size: 40px;
+    color: #EB003F;
+    float: right;
+    padding: 10px;
+  }
+  
+  .footer2 ul{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    color: #000;
+  }
+  
+  .footer2 a{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .footer2{
+    background-color: #EB003F;
+  
+  }
