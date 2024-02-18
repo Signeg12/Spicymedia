@@ -43,23 +43,22 @@ nav a,h2{
 
   .header-img{
     filter: grayscale(100%);
-    position: relative;
     margin-bottom: 2em;
     width: 100%;
-
-        .banner-tekst{
-            position: absolute;
-            top: 25%;
-            left: 5%;
-            text-align: center;
-        }
-
-        h1{
-            font-size: 4.5vw;
-            font-family: vogue;
-            color: #fff;
-        }
   }
+
+  .banner-tekst{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-align: center;
+}
+
+h1{
+    font-size: 4.5vw;
+    font-family: vogue;
+    color: #fff;
+}
   
 .nav__menu {
   font-size: 60px;
@@ -297,6 +296,8 @@ nav a,h2{
 
 }
 
+
+
 .website_section{
   margin: 0 100px;
   display: grid;
@@ -323,7 +324,8 @@ nav a,h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  
 
 }
 
@@ -331,9 +333,18 @@ nav a,h2{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 
 }
 
+
+.website_process h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  font-size: 40px;
+}
 .
   /*footer*/
   .footer1{
