@@ -40,6 +40,26 @@ nav a,h2{
     width: 150px;
     left: 130px;
   }
+
+  .header-img{
+    filter: grayscale(100%);
+    position: relative;
+    margin-bottom: 2em;
+    width: 100%;
+
+        .banner-tekst{
+            position: absolute;
+            top: 25%;
+            left: 5%;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 4.5vw;
+            font-family: vogue;
+            color: #fff;
+        }
+  }
   
 .nav__menu {
   font-size: 60px;
@@ -271,7 +291,7 @@ nav a,h2{
     
   }
 
-
+/*sectioner med tekst og billeder website*/
 .website_text1{
   display: flex;
 
@@ -279,6 +299,9 @@ nav a,h2{
 
 .website_section{
   margin: 0 100px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 20px 100px;
 
 }
 
@@ -287,6 +310,31 @@ nav a,h2{
   border-radius: 30px;
 }
 
+
+/*processen*/
+.processen{
+  background-color: #EB003F;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 30px;
+  width: 220px;
+  height: 275px;
+  font-family: vogue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.processen1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.
   /*footer*/
   .footer1{
     display: grid;

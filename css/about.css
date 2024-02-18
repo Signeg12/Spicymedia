@@ -28,6 +28,13 @@ nav a,h2, h1{
 p{
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+  background: url(../img/websitegrafik.svg)no-repeat;
+  background-size: cover;
+  max-width: 100%;
+
+}
 /*Navigation*/
 
 
@@ -288,6 +295,22 @@ p{
   font-family: vogue;
 }
 
+.bg-billede-desktop {opacity: 0.7;
+  filter: grayscale(100%);
+  height: 80wh;
+  }
+    .banner-tekst{
+      position: absolute;
+      top: 25%;
+      left: 5%;
+      text-align: center;
+  }
+  
+  h1{
+      font-size: 4.5vw;
+      font-family: vogue;
+      color: black;
+  }
   /*Main om os*/
 
   .hero_about h1{
