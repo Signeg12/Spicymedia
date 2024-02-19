@@ -38,24 +38,29 @@ body{
     left: 0;
     width: 100%;
     user-select: none;
+    height: 100px;
   }
-  
-  .nav__logo img{
+nav{
+  height: 100px;
+}
+
+.nav__logo img{
     width: 150px;
     left: 130px;
-  }
+}
   
 .nav__menu {
   font-size: 60px;
+  margin-top: 40px;
 }
 
   nav {
-    height: 3.5rem;
+    height: 100px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
   .nav__burger {
     color: #000;
@@ -64,9 +69,7 @@ body{
     color: #EB003F;
   }
   
-  .nav__data {
-    height: 100%;
-  }
+  
   
   
   
@@ -137,6 +140,7 @@ body{
     color: #36383a;
     display: flex;
     align-items: center;
+    justify-content: start;
     column-gap: .5rem;
     transition: background-color .3s;
     border-radius: 20px;
@@ -206,6 +210,7 @@ body{
     .nav__list {
       height: 100%;
       display: flex;
+      
       column-gap: 3rem;
     }
     .nav__link {
@@ -275,7 +280,29 @@ body{
       display: flex;
       justify-content: space-between;
     }
-    
+
+    .services_info img{
+      display: none;
+
+    }
+    .services_info{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .show-menu {
+      opacity: 1;
+      top: 3.5rem;
+      pointer-events: initial;
+    }
+    .hero_arrow{
+opacity: 0;    }
+    .nav__list{
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+    }
   }
 
 
@@ -284,11 +311,15 @@ body{
   max-width: 100%;
 }
 
-.hero_section span{
-  position: absolute;
+.front_image {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: end;
+  flex-direction: column;
+}
+
+.hero_arrow{
+  font-size: 30px;
 }
 
 
@@ -338,11 +369,16 @@ body{
   flex-direction: row;
   padding: 20px;
   height: 40vh;
+  filter: grayscale(100%);
   
 }
 
 .service_image{
   padding: 20px;
+}
+
+.services_line a:hover{
+  text-decoration:underline;
 }
 
 
@@ -351,16 +387,47 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 50pxc 0;
+  margin: 100px 0;
+  padding: 20px;
+  gap: 30px;
 }
 
+.about_images img{
+  max-width: 100%;
+  border-radius: 30px;
+}
 
+.about_text{
+  background-color: #EB003F;
+  border-radius: 30px;
+  padding: 20px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.about_text a, p{
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about_text h2{
+  font-size: 30px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about_section{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
   
 
 /*<img class="line_white" src="img/linjehvid.png" alt="">*/
   /*Kontaktformular*/
 
   .contact_us{
-    margin: 30px 20px;
+    margin: 30px 0 0 0;
   }
 
   .contact_text{
@@ -419,7 +486,14 @@ input[type=submit]{
     font-size: 20px;
     margin-top: 1em;
     cursor: pointer;
+    border: 1px solid #EB003F;
 
+  
+}
+input[type=submit]:hover{
+  background-color: white;
+  color: #EB003F;
+  transition: 0.4s ease-in-out;
 }
 
 .visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
@@ -528,7 +602,12 @@ input[type=submit]{
 }
 
 .contact_us{
-  background-image: url(../img/work-kontaktformular.png);
+  background: linear-gradient(rgba(142,142,142, 0.8), rgba(142,142,142,0.8)), url(../img/work-kontaktformular.png);
+  padding: 50px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    background-size: cover;
 }
 
 
