@@ -43,23 +43,30 @@ nav a,h2{
 
   .header-img{
     filter: grayscale(100%);
-    position: relative;
     margin-bottom: 2em;
     width: 100%;
-
-        .banner-tekst{
-            position: absolute;
-            top: 25%;
-            left: 5%;
-            text-align: center;
-        }
-
-        h1{
-            font-size: 4.5vw;
-            font-family: vogue;
-            color: #fff;
-        }
   }
+
+  .banner-tekst{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-align: center;
+}
+
+.banner_image{
+  background-image: url(../img/work-kontaktformular.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+}
+
+h1{
+    font-size: 4.5vw;
+    font-family: vogue;
+    color: #fff;
+}
   
 .nav__menu {
   font-size: 60px;
@@ -292,17 +299,19 @@ nav a,h2{
   }
 
 /*sectioner med tekst og billeder website*/
-.website_text1{
+.website_text1, .website_Text2, .website_text3{
   display: flex;
 
 }
 
-.website_section{
-  margin: 0 100px;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  margin: 20px 100px;
 
+
+.website_section{
+ display: flex;
+flex-direction: column;
+margin: 0 100px;
+align-items: center;
+justify-content: center;
 }
 
 .website_section img{
@@ -321,19 +330,47 @@ nav a,h2{
   height: 275px;
   font-family: vogue;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  white-space: nowrap;
 
 }
 
 .processen1{
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; 
 
 }
 
+.website_process h2{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+.website_process h3{
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin: 50px 0;
+}
+
+.processen i{
+  font-size: 80px;
+}
+
+@media screen and (max-width: 1118px) {
+  .processen1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 40px;
+    gap: 30px;
+  }
+  
+}
 .
   /*footer*/
   .footer1{
