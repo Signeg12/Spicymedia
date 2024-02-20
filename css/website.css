@@ -330,28 +330,46 @@ justify-content: center;
   height: 275px;
   font-family: vogue;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+  white-space: nowrap;
 
 }
 
 .processen1{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  
+  align-items: center; 
 
 }
-
 
 .website_process h2{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 50px 0;
   font-size: 40px;
+  margin: 30px 0;
+}
+
+.website_process h3{
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin: 50px 0;
+}
+
+.processen i{
+  font-size: 80px;
+}
+
+@media screen and (max-width: 1118px) {
+  .processen1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 40px;
+    gap: 30px;
+  }
+  
 }
 .
   /*footer*/
