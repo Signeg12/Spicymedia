@@ -57,9 +57,6 @@ nav{
   nav {
     height: 100px;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
   
   .nav__burger {
@@ -69,6 +66,12 @@ nav{
     color: #EB003F;
   }
   
+  .nav__data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   
   
@@ -76,7 +79,6 @@ nav{
   
   .nav__toggle {
     position: relative;
-    float: right;
     width: 32px;
     height: 32px;
   }
@@ -267,6 +269,7 @@ nav{
       pointer-events: none;
       opacity: 0;
       transition: top .4s, opacity .3s;
+      border: 1px solid  #EB003F;
       
     }
     .nav__menu::-webkit-scrollbar {
@@ -276,10 +279,7 @@ nav{
     .nav__link{
         background-color: white;
     }
-    .nav__data{
-      display: flex;
-      justify-content: space-between;
-    }
+   
 
     .services_info img{
       display: none;
@@ -297,12 +297,9 @@ nav{
       pointer-events: initial;
     }
     .hero_arrow{
-opacity: 0;    }
-    .nav__list{
-      display: flex;
-      justify-content: start;
-      flex-direction: column;
+      opacity: 0;    
     }
+   
   }
 
 
